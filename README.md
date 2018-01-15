@@ -4,7 +4,7 @@
 ### 1、caffe版本问题
   该网络实现是基于Pyramid Scene Parsing Network新建的caffe版本实现，其中主要增加了Interp层的功能。
 
-caffe版本下载地址：https://github.com/hszhao/PSPNet； 下载完成只需要make编译即可，然后将该程序放置在examples目录下。
+caffe版本下载地址：https://github.com/hszhao/PSPNet； 按流程安装即可。
 ### 2、训练数据
 本人实现是在10000张图片库THUS上训练的，请自行构建train.txt和train_gt01.txt文件，图片和真值图索引，其中所有图片的分类标签都设置为0。
 因为我们没有涉及分类，所以分类标签不影响结果。但是请将所有真值图中0/1标识前背景从double类型转为uint8类型存储。
